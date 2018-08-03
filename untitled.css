@@ -1,0 +1,62 @@
+/* CSS Document */
+
+.container {
+  grid-template-areas: "header header"
+                       "nav1 nav2 nav3 nav4";
+   max-height: 100px;
+	max-width: 2000px;                     
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+h1, h2 {
+  font-family: monospace;
+  text-align: center;
+}
+.header{
+	margin-bottom: 20px;
+	grid-area: 1/1/2/3;
+}
+header {
+  grid-area: 1/1/2/3;
+  background-color: dodgerblue;
+}
+ 
+.nav1 a { position: relative; 
+top: 2px;
+}
+.contact-btn a {
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid #204156;
+	grid-area: 2/1/3/2;
+}
+.nav1 a:active {
+  position: relative;
+  top: 4px;
+	
+}
+.head .container a{
+	 color: inherit;
+	
+}
+.nav1 {
+  grid-area: 2/1/3/2;
+  background-color: hsla(198,28%,63%,0.90);
+}
+
+
+
+.nav2 {
+  grid-area: 2/2/3/3;
+  background-color: hsla(198,28%,63%,0.90);
+}
+
+.nav3 {
+  grid-area: 2/3/3/4;
+  background-color: hsla(198,28%,63%,0.90);
+}
